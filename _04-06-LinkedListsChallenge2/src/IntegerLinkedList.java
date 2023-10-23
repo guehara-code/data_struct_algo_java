@@ -25,8 +25,24 @@ public class IntegerLinkedList {
     }
 
     public void insertSorted(Integer value) {
+        // assumption: the list is sorted
+        if( head == null || head.getValue() >= value) {
+            addToFront(value);
+            return;
+        }
 
-        // add your code here
+        // find insertion point
+        IntegerNode current = head.getNext();
+        IntegerNode previous = head;
+        while (current != null && current.getValue() < value) {
+            previous = current;
+            current = current.getNext();
+        }
+        IntegerNode newNode = new IntegerNode(value);
+        newNode.setNext(current);
+        previous.setNext(newNode);
+
+        size++;
 
     }
 
