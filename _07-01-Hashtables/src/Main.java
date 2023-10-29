@@ -21,5 +21,7 @@ public class Main {
         ht.remove("Wilson");
         ht.remove("Jones");
         ht.printHashtable();
+
+        System.out.println("Retrieve key Smith: " + ht.get("Smith"));
     }
 }
