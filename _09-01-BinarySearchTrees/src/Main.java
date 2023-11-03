@@ -11,5 +11,7 @@ public class Main {
         inTree.insert(22);
         inTree.insert(32);
 
+        inTree.traverseInOrder();
+
     }
 }
