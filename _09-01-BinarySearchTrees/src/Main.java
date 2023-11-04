@@ -23,5 +23,10 @@ public class Main {
         System.out.println(inTree.min());
         System.out.println(inTree.max());
 
+        System.out.println("");
+        inTree.traverseInOrder();
+        inTree.delete(25);
+        System.out.println("");
+        inTree.traverseInOrder();
     }
 }

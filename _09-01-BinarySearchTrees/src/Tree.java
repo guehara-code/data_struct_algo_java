@@ -37,6 +37,12 @@ public class Tree {
             } else if (subtreeRoot.getRightChild() == null) {
                 return subtreeRoot.getLeftChild();
             }
+
+            // case 3: node to delete has 2 children
+            subtreeRoot.setData(subtreeRoot.getRightChild().min());
+
+            // Delete the node that has the smallest value in the right subtree
+            subtreeRoot.setRightChild(delete(subtreeRoot.getRightChild(), subtreeRoot.getData()));
         }
 
         return subtreeRoot;
