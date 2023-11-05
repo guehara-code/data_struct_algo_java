@@ -25,7 +25,7 @@ public class Main {
 
         System.out.println("");
         inTree.traverseInOrder();
-        inTree.delete(25);
+        inTree.delete(15);
         System.out.println("");
         inTree.traverseInOrder();
     }
