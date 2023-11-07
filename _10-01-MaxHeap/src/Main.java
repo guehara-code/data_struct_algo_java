@@ -12,5 +12,10 @@ public class Main {
         heap.insert(67);
 
         heap.printHeap();
+
+        heap.delete(0);
+
+        System.out.println("");
+        heap.printHeap();
     }
 }
