@@ -13,9 +13,12 @@ public class Main {
 
         heap.printHeap();
 
-        heap.delete(0);
+//        heap.delete(0);
+//
+//        System.out.println("");
+//        heap.printHeap();
 
         System.out.println("");
-        heap.printHeap();
+        System.out.println(heap.peek());
     }
 }
