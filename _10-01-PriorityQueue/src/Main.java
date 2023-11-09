@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.PriorityQueue;
 
 public class Main {
@@ -13,6 +14,21 @@ public class Main {
         pq.add(429);
 
         System.out.println(pq.peek());
+        System.out.println(pq.remove());
+        System.out.println(pq.peek());
+        System.out.println(pq.poll());
+        System.out.println(pq.peek());
+        System.out.println(pq.remove(54));
+        System.out.println(pq.peek());
+        pq.add(-1);
+        System.out.println(pq.peek());
+
+        System.out.println("");
+        Object[] ints = pq.toArray();
+        for (Object num : ints) {
+            System.out.println(num);
+        }
+
     }
 
 }
