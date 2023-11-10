@@ -20,5 +20,9 @@ public class Main {
 
         System.out.println("");
         System.out.println(heap.peek());
+
+        System.out.println("");
+        heap.sort();
+        heap.printHeap();
     }
 }
